@@ -4,3 +4,6 @@
     - Para o nomeDoProjeto é obrigatório que o nome criado comece com uma letra;
 
 - No projeto, iremos trabalhamos dentro de src > app
+
+- Para criar um componente:
+    - ng g c nomeDoComponente;
