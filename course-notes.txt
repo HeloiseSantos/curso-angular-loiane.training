@@ -1,0 +1,6 @@
+- Para criar projeto em Angular:
+    - Navegar até a pasta que deseja criar o projeto;
+    - No terminal, digitar o comando: ng new nomeDoProjeto;
+    - Para o nomeDoProjeto é obrigatório que o nome criado comece com uma letra;
+
+- No projeto, iremos trabalhamos dentro de src > app
