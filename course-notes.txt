@@ -6,4 +6,25 @@
 - No projeto, iremos trabalhamos dentro de src > app
 
 - Para criar um componente:
-    - ng g c nomeDoComponente;
+    - ng g c nomeDoComponente
+
+- MÓDULOS
+    Módulo é o arquivo que nos ajudará a organizar e modularizar a aplicação. Podemos ter diferentes componentes dentro de um módulo e podemos escolher o que queremos expor para outros módulos da aplicação.
+
+    - O que tem dentro de um módulo e o que cada um dos meta dados faz:
+        - export class AppModule { } : declaração da classe de acordo com o padrão ES6;
+        - @NgModule({}) : decorator;
+            - declarations : onde listamos todos os componentes, diretivas e pipes que serão utilizados no módulo;
+            - imports : onde importamos os módulos que utilizaremos no módulo ou em um componente que pertence ao módulo;
+            - providers : onde colocamos os serviços que ficarão disponíveis a todos os componetes declarados no declarations do módulo;
+            - bootstrap : encontrado somente no módulo raiz do projeto. Declaramos aqui no componente que deve ser instanciado ao iniciar a aplicação, que será o componente que servirá como container do projeto.
+        - BrowserModule : prepara a aplicação para ser rodada/executada em um browser;
+        - FormsModule : 2 way data-binding e formulários do Angular;
+        - HttpModule : módulo que contém o objeto http que utilizamos para fazer as requisições AJAX do projeto;
+    
+    - Feature module: módulos de funcionalidades, módulos locais da aplicação, feito para facilitar a importação do que somente for necessário aos seus componentes.
+        - No módulo de funcionalidade temos o CommonModule que contém as diretivas e pipes mais comuns a serem utilizados.
+        - exports : indica quais são os componentes que gostaríamos de expor para outros módulos. Caso não queriamos que nosso componente fique visível para outros módulos, basta não declarar o exports;
+
+    - Para criar um módulo:
+        - ng g m nomeDoModulo
