@@ -35,3 +35,10 @@
     - Diretiva *ngFor: Criar o array de itens e itera-lo no HTML.
         Exemplo: component.ts: cursos: string[] = ["Java", "Ext JS", "Angular"];
                  HTML: <li *ngFor="let curso of cursos">{{ curso }}</li>
+
+- SERVICES
+    - utilizadas para separar as requisições do componente, sendo responsável por interagir com a API (servidor) e enviar ao componente.
+    - Para criar uma service via CLI: ng g s nomeDoServico.
+    - Injeção de depêndencia: Segundo a documentação do Angular - "um padrão de design no qual uma classe solicita dependências de fontes externas, em vez de criá-las"
+        Fazemos a injeção através do decorator "Injectable()", que significa que a classe do serviço onde ele é usado pode ser injetado em outra classe para que o uso dela possa ser feito.
+    - Como a injeção de depêndencia pode ser feita: no Angular é feito via construtor.
