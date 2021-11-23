@@ -28,3 +28,7 @@
 
     - Para criar um módulo:
         - ng g m nomeDoModulo
+
+- TEMPLATES
+    Para tornar um conteúdo dinâmico no HTML, podemos declarar e inicializar uma variável no component.ts e depois usar a interpolação para chamar essa variável no HTML
+    Interpolação: {{ nomeDaVariavel }}
