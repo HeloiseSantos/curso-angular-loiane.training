@@ -30,5 +30,8 @@
         - ng g m nomeDoModulo
 
 - TEMPLATES
-    Para tornar um conteúdo dinâmico no HTML, podemos declarar e inicializar uma variável no component.ts e depois usar a interpolação para chamar essa variável no HTML
-    Interpolação: {{ nomeDaVariavel }}
+    - Interpolação: Para tornar um conteúdo dinâmico no HTML, podemos declarar e inicializar uma variável no component.ts e depois usar a interpolação para chamar essa variável no HTML
+        Exemplo: {{ nomeDaVariavel }}
+    - Diretiva *ngFor: Criar o array de itens e itera-lo no HTML.
+        Exemplo: component.ts: cursos: string[] = ["Java", "Ext JS", "Angular"];
+                 HTML: <li *ngFor="let curso of cursos">{{ curso }}</li>
