@@ -42,3 +42,12 @@
     - Injeção de depêndencia: Segundo a documentação do Angular - "um padrão de design no qual uma classe solicita dependências de fontes externas, em vez de criá-las"
         Fazemos a injeção através do decorator "Injectable()", que significa que a classe do serviço onde ele é usado pode ser injetado em outra classe para que o uso dela possa ser feito.
     - Como a injeção de depêndencia pode ser feita: no Angular é feito via construtor.
+
+- PROPERTY BINDING AND INTERPOLATION
+    - Data binding: é uma forma de associar informações que estão no template para o componente ou do componente para o template. Ou seja uma variável, um atributo ou um método que retorna um valor, conseguimos mostrar no componente.
+    - Interpolação: {{ valor }}
+    - Property binding: associação de propriedade - [propriedade]="valor" - onde conseguimos ter a saída de um atributo do componente para o template. Também podemos ter o contrário, através de escutar eventos do template (click, foco, etc) e executar um método no componente - (evento)="handle"
+    - Two way data binding: [(ngModel)]="propriedade" - podemos manter tanto o template quanto o componente atualizados ao mesmo tempo. Muito utilizado em formulários.
+    - Property binding:
+        - <img [src]="urlImagem"/>
+        - Quando não existe uma propriedade no elemento, usa-se [attr.colspan]
